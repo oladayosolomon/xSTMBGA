@@ -14,7 +14,7 @@ git clone https://github.com/benelot/pybullet-gym.git
 cd pybullet-gym
 pip install -e.
 ```
-You should doanlod the casdual learner toolbox and add its path to Matlab<br />
+You should downnload the casdual learner toolbox and add its path to Matlab<br />
 
 Path related information<br />
 
