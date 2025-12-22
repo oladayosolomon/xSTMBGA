@@ -1,5 +1,5 @@
 classdef ManifoldGA < ALGORITHM
-% <single> <real/integer/label/binary/permutation> <large/none> <constrained/none>
+% <single> <real> <large/none>
 % Genetic algorithm with nonlinear manifold-based projection (ISOMAP)
 % projD --- 10 --- Dimensionality of projected manifold
 % proC ---  1  --- Crossover probability
@@ -60,3 +60,4 @@ classdef ManifoldGA < ALGORITHM
         end
     end
 end
+
