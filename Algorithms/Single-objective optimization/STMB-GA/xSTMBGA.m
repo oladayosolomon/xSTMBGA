@@ -7,15 +7,9 @@ classdef xSTMBGA < ALGORITHM
 % disM --- 20 --- Distribution index of polynomial mutation
 
 %------------------------------- Reference --------------------------------
-% J. H. Holland, Adaptation in Natural and Artificial Systems, MIT Press,
-% 1992.
-%------------------------------- Copyright --------------------------------
-% Copyright (c) 2023 BIMK Group. You are free to use the PlatEMO for
-% research purposes. All publications which use this platform or any code
-% in the platform should acknowledge the use of "PlatEMO" and reference "Ye
-% Tian, Ran Cheng, Xingyi Zhang, and Yaochu Jin, PlatEMO: A MATLAB platform
-% for evolutionary multi-objective optimization [educational forum], IEEE
-% Computational Intelligence Magazine, 2017, 12(4): 73-87".
+% Evolutionary Reinforcement Learning with Weight-Freezing and Markov Blanket-Based Dimensionality Reduction,
+% 2025.
+
 %--------------------------------------------------------------------------
 
     methods
@@ -26,19 +20,16 @@ classdef xSTMBGA < ALGORITHM
             %% Generate random population
             Population = Problem.Initialization();
             count = 0;
-            folder = fullfile('D:\sRLXBench\PlatEMO\Data',class(Algorithm));
+            folder = fullfile('D:\sRLXBench\PlatEMO\Data',class(Algorithm)); % change path accordingly
             Archive = Population;
             UMB        = LSMB(Archive,Problem);
 
             %% Optimization
             while Algorithm.NotTerminated(Population)
                 count= count+1;
-                %UMB        = LSMB(Archive,Problem);
                 MatingPool = TournamentSelection(2,Problem.N,FitnessSingle(Population));
                 Offspring  = OperatorGAhalfMB(Problem,Population(MatingPool),UMB);
-                %Offspring = OperatorGAMB(Problem,Population(MatingPool),UMB);
-
-                %Offspring  = OperatorGA(Problem,Population(MatingPool),{proC,disC,proM,disM});
+               
                 Population = [Population,Offspring];
                 Archive = Population;
                 [~,rank]   = sort(FitnessSingle(Population));
@@ -57,4 +48,5 @@ classdef xSTMBGA < ALGORITHM
             end
         end
     end
+
 end
