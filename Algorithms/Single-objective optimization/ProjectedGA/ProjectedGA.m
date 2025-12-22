@@ -1,5 +1,5 @@
 classdef ProjectedGA < ALGORITHM
-% <single> <real/integer/label/binary/permutation> <large/none> <constrained/none>
+% <single> <real> <large/none> 
 % Genetic algorithm with intrinsic dimension projection
 % projD --- 10 --- Dimensionality of projection space
 % updateFreq --- 50 --- Frequency to update projection matrix
@@ -60,3 +60,4 @@ classdef ProjectedGA < ALGORITHM
         end
     end
 end
+
