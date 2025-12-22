@@ -14,7 +14,7 @@ git clone https://github.com/benelot/pybullet-gym.git
 cd pybullet-gym
 pip install -e.
 ```
-You should downnload the causal learner toolbox and add its path to Matlab<br />
+You should download the causal learner toolbox and add its path to Matlab<br />
 
 Path related information<br />
 
@@ -23,3 +23,6 @@ pyenv("Version",'C:\Users\ecis\anaconda3\envs\RL_Bench\python.exe')
 
 ```
 Note: This code is based on PlatEMO 4.2 framework. Documentation available at (https://github.com/BIMK/PlatEMO).
+
+
+All output files from the experiments conducted can be dowlaoded at 
