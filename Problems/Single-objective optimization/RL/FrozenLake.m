@@ -21,23 +21,7 @@ classdef FrozenLake < PROBLEM
             PopObj = pyrunfile("mat_eval_env.py","fitnesses",env="FrozenLake-v1_small", agent='A2C', policy='MlpPolicy', weights=X);
             PopObj = double(PopObj);
         end
-        function Population = Evaluation(obj,varargin)
-        %Evaluation - Evaluate multiple solutions.
-        %
-        %   P = obj.Evaluation(Dec) returns the SOLUTION objects based on
-        %   the decision variables Dec. The objective values and constraint
-        %   violations of the solutions are calculated automatically, and
-        %   obj.FE is increased accordingly.
-        %
-        %   P = obj.Evaluation(Dec,Add) also sets the additional properties
-        %   (e.g., velocity) of solutions.
-        %
-        %   This function is usually called after generating new solutions.
-        %
-        %   Example:
-        %       Population = Problem.Evaluation(PopDec)
-        %       Population = Problem.Evaluation(PopDec,PopVel)
-            
+        function Population = Evaluation(obj,varargin)          
             PopDec     = obj.CalDec(varargin{1});
             PopObj     = obj.CalObj(PopDec);
             PopCon     = obj.CalCon(PopDec);
@@ -46,4 +30,5 @@ classdef FrozenLake < PROBLEM
         end
     end
 end 
+
 
