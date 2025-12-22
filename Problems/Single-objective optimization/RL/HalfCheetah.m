@@ -1,6 +1,6 @@
 classdef HalfCheetah < PROBLEM
 % <single> <real> <large/none>
-% DRL GalfCheetah Task
+% DRL HalfCheetah Task
 %--------------------------------------------------------------------------
 
     methods
@@ -30,4 +30,5 @@ classdef HalfCheetah < PROBLEM
         end
     end
 end 
+
 
