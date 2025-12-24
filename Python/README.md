@@ -1,5 +1,5 @@
 
-# A2C, PPO
+# A2C, PPO, PDERL
 Requires Python 3.11
 Clone this repository and install the packages specified in requirements.txt in your Python environment.<br />
 ```
@@ -17,4 +17,6 @@ To run PPO
 ```
 Run python ppo_experiment.py
 ```
+
+ Official implementation of PDERL from https://github.com/crisbodnar/pderl.git is used PDERL
 All output files from the experiments conducted can be downloaded at 
