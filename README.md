@@ -2,7 +2,7 @@
 
 This repository contains the complete, executable source code that can be used to reproduce all experiments reported in the manuscript.
 
-**PlatEMO (MATLAB) Component**
+**PlatEMO (Matlab-Python co-simulation) Component**
 
 All evolutionary optimization algorithms used in this work (both proposed methods and baseline methods) are implemented inside the ```PlatEMO/ ``` directory, following standard PlatEMO conventions. 
 
