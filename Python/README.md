@@ -10,13 +10,14 @@ pip install -r requirements.txt
 
 To run A2C  
 ```
-Run python a2c_experiment.py
+python a2c_experiment.py
 ```
 
 To run PPO 
 ```
-Run python ppo_experiment.py
+python ppo_experiment.py
 ```
 
- Official implementation of PDERL from https://github.com/crisbodnar/pderl.git is used PDERL
-All output files from the experiments conducted can be downloaded at 
+The official implementation of PDERL, available from https://github.com/crisbodnar/pderl.git, is used for PDERL.
+ 
+All output files from the experiments conducted in ur work be downloaded at 
