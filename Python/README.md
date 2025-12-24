@@ -20,4 +20,3 @@ python ppo_experiment.py
 
 The official implementation of PDERL, available from https://github.com/crisbodnar/pderl.git, is used for PDERL.
  
-All output files from the experiments conducted in ur work be downloaded at https://drive.google.com/drive/folders/1OfrcP-KRnyWfjlM-HTHrF3d40mjRmF6X?usp=drive_link
