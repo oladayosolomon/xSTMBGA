@@ -42,3 +42,18 @@ All output files from the experiments conducted can be downloaded at https://dri
 
 The python/ directory contains baseline implementations used exclusively for comparison with traditional deep reinforcement learning (DRL) and hybrid Evolutionary–DRL methods.
 
+** A2C, PPO, PDERL **
+Requires Python 3.11 and the packages specified in requirements.txt.<br />
+
+To run A2C  
+```
+python a2c_experiment.py
+```
+
+To run PPO 
+```
+python ppo_experiment.py
+```
+
+The official implementation of PDERL, available from https://github.com/crisbodnar/pderl.git, is used for PDERL.
+ 
