@@ -1,6 +1,0 @@
-gym==0.26.2
-gymnasium>=0.27.0
-mujoco==2.3.3
-shimmy==1.1.0
-mo-gym[all]==0.2.1
-stable-baselines3==2.0.0 
